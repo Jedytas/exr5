@@ -1,0 +1,74 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#messages {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Стили для выделения ошибок */
+input.error,
+textarea.error,
+select.error,
+label.error {
+    border-color: red;
+}
+
+/* Стили для выбранных языков программирования */
+option[selected] {
+    font-weight: bold;
+}
