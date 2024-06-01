@@ -249,7 +249,7 @@ if (!empty($_COOKIE[session_name()]) &&
         $sth = $db->prepare('SELECT id FROM programming_language WHERE name = :langName');
         $sth->execute(['langName' => $langsval[$i]]);
         while ($row = $sth->fetch()) {
-          $langId = $row['Id'];
+          $langId = $row['id'];
         }
         if($langId == null)
         {
